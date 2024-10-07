@@ -31,7 +31,7 @@
 
 ㅁ Normal equation is usally used at small amount of data situation (eteration 반복 필요 없을때-그래서 과거에서는 어떤 feature를 사용할지가 매우 중요)
 
-ㅁ Design matrix
+ㅁ Design matrix  
 <img width="421" alt="image" src="https://github.com/user-attachments/assets/36e369b6-f5fd-497b-af2c-b8c75e8fb3fe">
 
 ㅁ Assuming (X^X)^(-1) exist, but it might not?! (특히 feature 많은 상황-feature 간 dependence 클 때)
