@@ -10,7 +10,7 @@
 ## Gradient Descent  
 
 - Update rule
-- <img width="282" alt="image" src="https://github.com/user-attachments/assets/35bd7cb0-269a-4ba4-b93d-770a70b84c6a">
+<img width="282" alt="image" src="https://github.com/user-attachments/assets/35bd7cb0-269a-4ba4-b93d-770a70b84c6a">
 
 ㅁ Using all n data points is not alligned with the concept of "Big Data".]
 
