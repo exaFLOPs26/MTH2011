@@ -1,6 +1,6 @@
 수학적인 사고는 연역적으로 assumption을 바탕으로 풀어나가는 것 이를 통해 세상을 조금 더 설명력있게 but 현실과는 조금 떨어질 수도...
 
-## OLS in MLE view
+## MLE --> LS (Regression)  
 
 ### Steps
 1. Assume our hypothesis as linear model w\ noise  
@@ -15,3 +15,23 @@
 
 4. By defining (log) likelihood, solving least squares is solving a maximum likelihood problem for a particular probabilistic model. 
     <img width="483" alt="image" src="https://github.com/user-attachments/assets/180fe6f9-4558-466b-b48b-e82b2b7ec056">
+
+## Reason of using log
+- Even in SGD, amount of multiplication is still big. By that even the value is not close to 0, multiply of all will be close to 0.
+- Tractable
+- For eliminating exponential function
+
+## MLE --> Binary Entropy (Classification)  
+
+
+## Newton's Method
+- When?
+    small low-dimention dataset   
+
+- Learning rate is fixed unlike SGD.
+
+|제목|내용|설명|
+|:---|---:|:---:|
+|왼쪽정렬|오른쪽정렬|중앙정렬|
+|왼쪽정렬|오른쪽정렬|중앙정렬|
+|왼쪽정렬|오른쪽정렬|중앙정렬|
