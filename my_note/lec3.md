@@ -3,7 +3,7 @@
 ## OLS in MLE view
 
 ### Steps
-1. Assume our hypothesis as linear model w\ noise
+1. Assume our hypothesis as linear model w\ noise  
     <img width="147" alt="image" src="https://github.com/user-attachments/assets/0f3cea65-f5bb-4a5f-8b4a-f1f76fe64218">  
 
 2. Assumptions on noise  
