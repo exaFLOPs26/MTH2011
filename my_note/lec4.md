@@ -18,7 +18,7 @@ By log partition function, inference of expectation and variance is settled.
 ## Generalized Linear Models(GLS)
 
 ### Pick a link function (and distribution) based on target's type.
-<img alt="image" src="https://github.com/user-attachments/assets/efe6c1bf-8a6b-4423-9a2d-28adb5dc8ea2" width="100%"> <img alt="image" src="https://github.com/user-attachments/assets/37a115e4-c019-489e-a173-d9e8c96e41e6" width="100%">
+<img alt="image" src="https://github.com/user-attachments/assets/efe6c1bf-8a6b-4423-9a2d-28adb5dc8ea2" width="80%"> <img alt="image" src="https://github.com/user-attachments/assets/37a115e4-c019-489e-a173-d9e8c96e41e6" width="80%">
 
 ## Multiclass
 
