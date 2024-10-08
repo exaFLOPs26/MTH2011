@@ -42,9 +42,9 @@ By that, interpretion of hypothesis is the likelihood of Bernoulli not Guassian.
 ## Newton's Method
 ### Steps
 1. Define f(theta) as derivative of log likelihood function in respect to theta  
-<img width="392" alt="image" src="https://github.com/user-attachments/assets/a47de8f9-f964-4071-9a88-0930418ced60">
+<img width="392" alt="image" src="https://github.com/user-attachments/assets/a47de8f9-f964-4071-9a88-0930418ced60">  
 2. Find zero of f(theta)  
-<img width="429" alt="image" src="https://github.com/user-attachments/assets/a38b5abc-5ff7-49f0-9fec-f31a50977acf">
+<img width="429" alt="image" src="https://github.com/user-attachments/assets/a38b5abc-5ff7-49f0-9fec-f31a50977acf">  
 
 
 - As compute per step is highly expensive, Newton's method is used in small low-dimention dataset 
