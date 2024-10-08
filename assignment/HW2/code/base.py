@@ -31,50 +31,81 @@ y_train = iris_train["target"].values
 X_test = iris_test.drop(columns='target').values
 y_test = iris_test["target"].values
 
+# # Standardize features (feature scaling)
+# X_train_mean = np.mean(X_train, axis=0)
+# X_train_std = np.std(X_train, axis=0)
+# X_train = (X_train - X_train_mean) / X_train_std
+
+# X_test = (X_test - X_train_mean) / X_train_std
+
 # Add bias term (intercept)
 X_train = np.hstack((np.ones((X_train.shape[0], 1)), X_train))
 X_test = np.hstack((np.ones((X_test.shape[0], 1)), X_test))
+
+
+# Plot each feature against the target
+def plot_features_vs_target(X, y, feature_names):
+    num_features = X.shape[1]
+    plt.figure(figsize=(12, num_features * 4))
+
+    for i in range(num_features):
+        plt.subplot(num_features, 1, i + 1)
+        plt.scatter(X[:, i], y, c=y, cmap='viridis', edgecolor='k', s=50)
+        plt.title(f"Feature {i + 1}: {feature_names[i]} vs Target")
+        plt.xlabel(f"{feature_names[i]}")
+        plt.ylabel("Target")
+        
+    plt.tight_layout()
+    plt.show()
+
+# Define feature names
+feature_names = ['petal_length', 'petal_width']
+
+# Plot the features vs target
+plot_features_vs_target(X_train[:, 1:], y_train, feature_names)
+
 
 # Sigmoid function
 def sigmoid(z):
     return 1 / (1 + np.exp(-z))
 
 # Logistic loss function
-def loss(X, y, theta):
+def likelihood(X, y, theta):
     m = len(y)
-    h = sigmoid(X @ theta.T)
-    return -(1/m) * np.sum(y * np.log(h) + (1 - y) * np.log(1 - h))
+    h = sigmoid(X @ theta)
+    return (1/m) * np.sum(y * np.log(h + 1e-15) + (1 - y) * np.log(1 - h + 1e-15))
 
 # SGD for logistic regression
 def sgd_logistic_regression(X, y, learning_rate, epochs):
     m, n = X.shape
-    theta = np.zeros(n).reshape(1,n)
-    
+    theta = np.zeros((n, 1))
+    c = 0
     for epoch in range(epochs):
         for i in range(m):
             rand_idx = np.random.randint(m)
-            xi = X[rand_idx:rand_idx+1].T
+            xi = X[rand_idx:rand_idx+1]
             yi = y[rand_idx:rand_idx+1]
-            gradient = (sigmoid(theta @ xi) - yi) * xi
-            theta = theta - learning_rate * gradient.T
+            gradient = (sigmoid(xi @ theta + c) - yi) * xi
+            theta -= learning_rate * gradient.T
+            c -= learning_rate * yi - sigmoid(xi @ theta + c)
         
         # Compute and print the loss every 1000 epochs
         if (epoch + 1) % 1000 == 0:
-            current_loss = loss(X, y, theta)
+            current_loss = likelihood(X, y, theta)
             print(f"Epoch {epoch + 1}/{epochs}, Loss: {current_loss:.4f}")
     
     return theta
 
 # Train the model
-theta = sgd_logistic_regression(X_train, y_train, learning_rate=0.001, epochs=1000)
+theta = sgd_logistic_regression(X_train, y_train, learning_rate=0.0001, epochs=10000)
 
 # Predict function
 def predict(X, theta):
-    return np.round(sigmoid(X @ theta.T))
+    return np.round(sigmoid(X @ theta))
 
 # Accuracy calculation
 y_pred = predict(X_test, theta)
-accuracy = np.mean(y_pred == y_test)
+accuracy = np.mean(y_pred == y_test.reshape(-1, 1))
 print(f"Test accuracy: {accuracy * 100:.2f}%")
 
 # Decision boundary plot
@@ -82,16 +113,16 @@ def plot_decision_boundary(X, y, theta):
     plt.figure(figsize=(8, 6))
 
     # Plot the original data points
-    plt.scatter(X[:, 1][y == 0], X[:, 2][y == 0], color='blue', label='Class 0')
-    plt.scatter(X[:, 1][y == 1], X[:, 2][y == 1], color='red', label='Class 1')
+    plt.scatter(X[:, 1][y.flatten() == 1], X[:, 2][y.flatten() == 1], color='blue', label='Class 1')
+    plt.scatter(X[:, 1][y.flatten() == 2], X[:, 2][y.flatten() == 2], color='red', label='Class 2')
 
     # Plot the decision boundary
     x_boundary = np.array([min(X[:, 1]) - 1, max(X[:, 1]) + 1])
     y_boundary = -(theta[0] + theta[1] * x_boundary) / theta[2]
     plt.plot(x_boundary, y_boundary, label="Decision Boundary", color='green')
 
-    plt.xlabel('Feature 1')
-    plt.ylabel('Feature 2')
+    plt.xlabel('petal_length')
+    plt.ylabel('petal_width')
     plt.legend()
     plt.show()
 
