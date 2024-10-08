@@ -24,7 +24,8 @@
 <summary> Difference with LS </summary>
 
 ```
-link function generating hypothesis is different depending on our target value.  
+link function generating hypothesis is different depending on our target value. 
+As we define g(z) as bellow, Logistic Regression is made.   
 By that, interpretion of hypothesis is the likelihood of Bernoulli not Guassian.  
 ```
 <img width="456" alt="image" src="https://github.com/user-attachments/assets/2c203edc-1eb8-495f-a701-c19048acdc31">
@@ -35,9 +36,14 @@ By that, interpretion of hypothesis is the likelihood of Bernoulli not Guassian.
 
 
 ## Newton's Method
-- When?
-    small low-dimention dataset   
+### Steps
+1. Define f(theta) as derivative of log likelihood function in respect to theta  
+<img width="392" alt="image" src="https://github.com/user-attachments/assets/a47de8f9-f964-4071-9a88-0930418ced60">
+2. Find zero of f(theta)  
+<img width="429" alt="image" src="https://github.com/user-attachments/assets/a38b5abc-5ff7-49f0-9fec-f31a50977acf">
 
+
+- As compute per step is highly expensive, Newton's method is used in small low-dimention dataset 
 - Learning rate is fixed unlike SGD.
 
 ## Optimization Method Summary
