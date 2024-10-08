@@ -1,7 +1,8 @@
 > 수학적인 사고는 연역적으로 assumption을 바탕으로 풀어나가는 것 이를 통해 세상을 조금 더 설명력있게 but 현실과는 조금 떨어질 수도...
 
 ## MLE --> LS (Regression)  
-
+> Maximizing the following function  
+> <img width="271" alt="image" src="https://github.com/user-attachments/assets/8120b87f-5e0f-4880-b603-b81c55f6f525">
 ### Steps
 1. Assume our hypothesis as linear model w\ noise  
     <img width="147" alt="image" src="https://github.com/user-attachments/assets/0f3cea65-f5bb-4a5f-8b4a-f1f76fe64218">  
@@ -20,6 +21,11 @@
 - For eliminating exponential function
 
 ## MLE --> Binary Entropy (Classification)  
+
+### Difference with LS
+    link function generating hypothesis value is different  
+
+    <img width="456" alt="image" src="https://github.com/user-attachments/assets/2c203edc-1eb8-495f-a701-c19048acdc31">
 
 
 ## Newton's Method
