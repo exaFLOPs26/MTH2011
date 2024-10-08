@@ -5,9 +5,8 @@
 - a(η) the log partition function is given as sum of all probability is 1.  
 
 <details>
-<summary>Why do we care about exponential family?<</summary>>
+<summary>Why do we care about exponential family?</summary>
 <img width="573" alt="image" src="https://github.com/user-attachments/assets/98373475-b7ff-496f-9f0d-2628dd3eba36">  
-
 By log partition function, inference of expectation and variance is settled.  
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/7b787d88-6cfd-4b60-afdd-a86675ff97e8">  
