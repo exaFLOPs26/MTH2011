@@ -22,10 +22,17 @@
 
 ## MLE --> Binary Entropy (Classification)  
 
-### Difference with LS
-    link function generating hypothesis value is different  
+<details>
+<summary> Difference with LS </summary>
 
-    <img width="456" alt="image" src="https://github.com/user-attachments/assets/2c203edc-1eb8-495f-a701-c19048acdc31">
+```
+link function generating hypothesis value is different 
+
+```
+<img width="456" alt="image" src="https://github.com/user-attachments/assets/2c203edc-1eb8-495f-a701-c19048acdc31">
+</details>
+ 
+
 
 
 ## Newton's Method
