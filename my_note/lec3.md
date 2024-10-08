@@ -1,4 +1,4 @@
-수학적인 사고는 연역적으로 assumption을 바탕으로 풀어나가는 것 이를 통해 세상을 조금 더 설명력있게 but 현실과는 조금 떨어질 수도...
+> 수학적인 사고는 연역적으로 assumption을 바탕으로 풀어나가는 것 이를 통해 세상을 조금 더 설명력있게 but 현실과는 조금 떨어질 수도...
 
 ## MLE --> LS (Regression)  
 
@@ -30,9 +30,27 @@
 
 - Learning rate is fixed unlike SGD.
 
+## Optimization Method Summary
+
 |Method|Compute per Step|Number of Steps|
 |:---:|:---:|:---:|
 |SGD|Low|High|
 |Minibatch SGD|Middle|Middle|
 |GD|Higher than SGD|Can't say it will be lower than SGD|
 |Newton|High|Low|
+
+<details>
+<summary>In classical stats, </summary>
+
+```
+d is small, n is often small, exact parameters matter
+```
+</details>
+
+<details>
+<summary>In modern ML, </summary>
+
+```
+d is huge, n is huge, parameters used only for prediction(Individual parameters don't have such meanings)
+```
+</details>
