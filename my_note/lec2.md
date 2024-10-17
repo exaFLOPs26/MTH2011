@@ -22,7 +22,7 @@
 - minibatch: |B| = m
 - smaller learning rate ~ larger batch size
 - Smaller B implies a lower quality approximation of the gradient (higher variance)  
-- Nevertheless, it may actually converge faster! (Case where the dataset has many copies of the same point–extreme, but lots of redundancy) I In practice, choose B proportional to what works well on modern parallel hardware (GPUs).
+- Nevertheless, it may actually converge faster! (Case where the dataset has many copies of the same point–extreme, but lots of redundancy) In practice, choose B proportional to what works well on modern parallel hardware (GPUs).
 
 
 ## Normal equations
@@ -33,6 +33,7 @@
 
 - Design matrix  
 <img width="421" alt="image" src="https://github.com/user-attachments/assets/36e369b6-f5fd-497b-af2c-b8c75e8fb3fe">
+<img width="154" alt="image" src="https://github.com/user-attachments/assets/0a520075-9a44-4b68-bacd-47aa9d41fa32">
 
 - Assuming `(X^(t) X)^{-1}` exists, but it might not?! (특히 feature 많은 상황 - feature 간 dependence 클 때)
 - `(X^(t) X)` becomes a big matrix and finding it's inverse is very expensive.  

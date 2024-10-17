@@ -15,7 +15,7 @@
     <img width="483" alt="image" src="https://github.com/user-attachments/assets/180fe6f9-4558-466b-b48b-e82b2b7ec056">
 
 ## Reason of using log
-- Even in SGD, amount of multiplication is still big. By that even the value is not close to 0, multiply of all will be close to 0.
+- Even in SGD, amount of multiplication is still big. By even the value is not close to 0, multiply of all will be close to 0.
 - Tractable
 - For eliminating exponential function
 
