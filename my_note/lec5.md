@@ -10,11 +10,15 @@
 
 <img width="386" alt="image" src="https://github.com/user-attachments/assets/e2da4728-db7f-4e2d-908c-a1db40fefe0b">  
 
+
 <img width="575" alt="image" src="https://github.com/user-attachments/assets/13002e2b-1241-415a-9a0e-7224cfc79a80">  
+
 
 <img width="575" alt="image" src="https://github.com/user-attachments/assets/ff875817-0579-49b8-96cf-452ae63cb2b7">  
 
+
 > Like we said feature φ(x) is high-dimensional, but kernel is only doing kind of inner product which is way cheaper.  
+
 
 <img width="541" alt="image" src="https://github.com/user-attachments/assets/7d0b9b14-b0de-4c38-ba7e-8499953eae24">  
 
