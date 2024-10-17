@@ -15,11 +15,11 @@
 - Update rule
 <img width="282" alt="image" src="https://github.com/user-attachments/assets/35bd7cb0-269a-4ba4-b93d-770a70b84c6a">
 
-- Using all n data points is not alligned with the concept of "Big Data".]
+- Using all n data points is not alligned with the concept of "Big Data".
 
 ## Stochastic GD
-
-- minibatch: |B| = 1
+- SGD : |B| = 1
+- minibatch: |B| = m
 - smaller learning rate ~ larger batch size
 - Smaller B implies a lower quality approximation of the gradient (higher variance)  
 - Nevertheless, it may actually converge faster! (Case where the dataset has many copies of the same point–extreme, but lots of redundancy) I In practice, choose B proportional to what works well on modern parallel hardware (GPUs).
