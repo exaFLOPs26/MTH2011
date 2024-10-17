@@ -34,6 +34,7 @@
 - Design matrix  
 <img width="421" alt="image" src="https://github.com/user-attachments/assets/36e369b6-f5fd-497b-af2c-b8c75e8fb3fe">
 <img width="154" alt="image" src="https://github.com/user-attachments/assets/0a520075-9a44-4b68-bacd-47aa9d41fa32">
+<img width="794" alt="image" src="https://github.com/user-attachments/assets/8ddc0ce2-80c2-49cd-a322-b8ef422f6e3b">
 
 - Assuming `(X^(t) X)^{-1}` exists, but it might not?! (특히 feature 많은 상황 - feature 간 dependence 클 때)
 - `(X^(t) X)` becomes a big matrix and finding it's inverse is very expensive.  
