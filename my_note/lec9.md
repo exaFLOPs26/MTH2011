@@ -12,4 +12,11 @@ Mathmetical expression of unconsciousness. No need to make complex optimization
 Feature mapping is good for non-linear but how?!
 We don't know. So just give it to Neural Net and optimize it.
 
-In math, want to find the function. But Neural Net is doing good. Because of stacking. And by stacking NN can find the derived features(variables) by input data.
+In math, want to find the function. But Neural Net is doing good. Because of stacking(composition funciton). And by stacking NN can find the derived features(variables) by input data.
+
+Most weekness of NN is interpretaion.
+
+### Residual connection
+ 
+<img width="751" alt="image" src="https://github.com/user-attachments/assets/e2979f16-f363-4019-ad51-51aa7cab2e4f">
+
