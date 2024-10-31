@@ -1,4 +1,4 @@
-## Deep Laerning
+## (10/29) Deep Laerning
 
 Deep Learning is still in a form of GLM.
 
@@ -20,3 +20,9 @@ Most weekness of NN is interpretaion.
  
 <img width="751" alt="image" src="https://github.com/user-attachments/assets/e2979f16-f363-4019-ad51-51aa7cab2e4f">
 
+
+## (10/31) Backpropagation
+
+> Backpropagation is just chain rule of composition functions
+
+<img width="538" alt="image" src="https://github.com/user-attachments/assets/6eb71262-c01c-4b84-bd4a-baa300d770c2">
