@@ -26,3 +26,8 @@ Most weekness of NN is interpretaion.
 > Backpropagation is just chain rule of composition functions
 
 <img width="538" alt="image" src="https://github.com/user-attachments/assets/6eb71262-c01c-4b84-bd4a-baa300d770c2">
+
+
+## Generalization
+
+Monte Carlo Technique: Population is replaced by sample distribtuion
