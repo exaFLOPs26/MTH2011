@@ -25,3 +25,18 @@
     - Maximization Step
         - Update the parameters
         <img width="525" alt="image" src="https://github.com/user-attachments/assets/510f6d09-7c16-466f-84c4-246ef8b3a6e6">
+
+### Convex
+
+- 이계도함수가 양수와 동치는 아래와 같다
+\
+[z = \lambda a + (1 - \lambda) b
+\]
+then 
+\[
+(z, \lambda f(a) + (1 - \lambda) f(b)) \in G_f
+\]
+if 
+\[
+\lambda f(a) + (1 - \lambda) f(b) \geq f(z).
+\]
