@@ -26,17 +26,13 @@
         - Update the parameters
         <img width="525" alt="image" src="https://github.com/user-attachments/assets/510f6d09-7c16-466f-84c4-246ef8b3a6e6">
 
-### Convex
+### Convex & Jensen's Inequality
 
-- 이계도함수가 양수와 동치는 아래와 같다
-\
-[z = \lambda a + (1 - \lambda) b
-\]
-then 
-\[
-(z, \lambda f(a) + (1 - \lambda) f(b)) \in G_f
-\]
-if 
-\[
-\lambda f(a) + (1 - \lambda) f(b) \geq f(z).
-\]
+<img width="552" alt="image" src="https://github.com/user-attachments/assets/10438c7d-c6dc-42db-9daa-a2a729fb9cf2">
+<img width="518" alt="image" src="https://github.com/user-attachments/assets/29563c02-d34c-4deb-b082-0480a6168aa9">
+<img width="588" alt="image" src="https://github.com/user-attachments/assets/a0a90120-bc88-491f-a068-755c8ec992b6">
+
+### EM Algorithm as MLE
+<img width="588" alt="image" src="https://github.com/user-attachments/assets/6a3515b2-ba03-44c9-bcda-488e070f9142">
+<img width="588" alt="image" src="https://github.com/user-attachments/assets/ab4f9b69-5b68-4cf6-8fa1-a274d8954acb">
+<img width="526" alt="image" src="https://github.com/user-attachments/assets/e726fb9e-0b9c-4717-8ca0-4dbbadd785ef">
