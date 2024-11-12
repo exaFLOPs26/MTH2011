@@ -24,3 +24,4 @@
         <img width="450" alt="image" src="https://github.com/user-attachments/assets/91b362eb-c7c3-4daf-8866-95bb73429776">
     - Maximization Step
         - Update the parameters
+        <img width="525" alt="image" src="https://github.com/user-attachments/assets/510f6d09-7c16-466f-84c4-246ef8b3a6e6">
