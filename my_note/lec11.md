@@ -1,4 +1,4 @@
-## Unsupervised Learning
+## (Tuesday) Unsupervised Learning
 
 - We implicitly think Euclidean distance as similarity
 - Simple is best
@@ -36,3 +36,7 @@
 <img width="588" alt="image" src="https://github.com/user-attachments/assets/6a3515b2-ba03-44c9-bcda-488e070f9142">
 <img width="588" alt="image" src="https://github.com/user-attachments/assets/ab4f9b69-5b68-4cf6-8fa1-a274d8954acb">
 <img width="526" alt="image" src="https://github.com/user-attachments/assets/e726fb9e-0b9c-4717-8ca0-4dbbadd785ef">
+
+
+## (Thursday) Evaluatoin Metrics
+mnist -data augmentation 
